@@ -1,3 +1,6 @@
+// this is the root component
+
+
 import React from "react";
 import Header from "./components/Header";
 
@@ -6,7 +9,7 @@ function App() {
   const name = 'Israel'
   return (
     <div className="container">
-      <Header  /> 
+      <Header /> 
     </div>
   );
 }
