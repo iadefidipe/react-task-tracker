@@ -11,7 +11,7 @@ const Header = ({title}) => {
     return (
         <header className="header">
             <h1> {title}</h1>
-            <Button color = 'red' text='Add' onClick={onClick} />
+            <Button  text='Add' onClick={onClick} />
             
         </header>
     )
