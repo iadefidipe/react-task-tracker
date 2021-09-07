@@ -2,16 +2,16 @@
 // the data we use in an app should major be in our state, to achive that in react we use a hook called useState. imported from react directly
 // import { useState } from "react";
 
-import Task from "./Task";
+import Task from "./Task"; 
 
 
 
-const Tasks = ({tasks}) => {
+const Tasks = ({tasks, onDelete, onToggle}) => {
     
     return (
         <>
             {tasks.map((task) => (
-            <Task key={task.id} task={task} />
+            <Task key={task.id} task={task} onDelete = {onDelete} onToggle = {onToggle} />
             ))}
         </>
     )
